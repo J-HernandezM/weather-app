@@ -5,10 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles.css">
-    <title>Weather-App</title>
+    <title>Weather Wizard</title>
 </head>
 <body>
-    <h1>weather apppp</h1>
+    <div class="up">
+        <header>
+            <div class="logo">
+                <div class="logo__logo">
+                    <h1 class="logo__title">
+                        <p class="title1 row">Weather</p>
+                        <p class="title2 row">Wizard</p>
+                    </h1>
+                    <img src="./assets/logo.png" alt="company logo" class="logo__image">
+                </div>
+                <p class="logo__description">Look up for the weather anywhere!</p>
+            </div>
+            <div class="info">
+                <figure class="info__box">
+                    <img src="./assets/hacker.png" alt="contact me" class="info__image">
+                    <p class="info__description">Code</p>
+                </figure>
+                <figure class="info__box">
+                    <img src="./assets/github.png" alt="github repository" class="info__image">
+                    <p class="info__description">J-HernandezM</p>
+                </figure>
+            </div>
+        </header>
+        <div class="searchBox">
+            <input type="text" class="search" placeholder="Type city or city, country">
+            <button class="btn">Search</button>
+        </div>
+    </div>
+    <div class="down">
+        <main>
+            <div class="card">
+                <h2 class="city">Envigado</h2>
+                <h3 class="country">CO</h3>
+                <p class="temp">26</p>
+                <span class="temp2">28</span>
+                <img src="" alt="weather state image" class="card__stateImg">
+                <p class="card__main">Clouds</p>
+                <p class="card__description">scattered clouds</p>
+            </div>
+        </main>
+    </div>
     <script src="./src/index.js"></script>
 </body>
 </html>
