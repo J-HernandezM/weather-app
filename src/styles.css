@@ -11,28 +11,30 @@
     --primary:#00395d;
     --secondary:#00aeef;
     --error:#CF6679;
-    --onPrimary:#000000;
+    --onPrimary:hsl(204, 43%, 93%);
     --onSecondary:#000000;
     --onBg:#FFFFFF;
     --onSfc:#FFFFFF;
+    
+    --cardsizew:170rem;
+    --cardsizeh:220rem;
 
     --sm:16rem;
+    --xs:14rem;
     --md:18rem;
     --lg:20rem;
     font-size: 6.25%;
 }
 body{
-    display: grid;
-    grid-template-rows: 40% 60%;
-
     height: 100vh;
     width: 100vw;
 
-    background-color: var(--background);
     color: var(--onSfc);
-
+    
     font-family: 'VT323', monospace;
     font-size: var(--md);
+
+    background-color: var(--surface3);
 }
 *{
     padding: 0;
@@ -41,24 +43,37 @@ body{
 }
 /* LAYOUT */
 .down{
-    background-color: var(--surface3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 390rem;
+    padding: 24rem 15rem;
+    height: fit-content;
+    
 }
 .up{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-
-    padding: 20rem;
+    
+    min-width: 390rem;
+    height: 370rem;
+    padding: 20rem 20rem 0 20rem;
+    
+    background-color: var(--background);
+}
+main{
+    display: grid;
+    justify-content: center;
+    gap: 15rem;
+    grid-template-columns: repeat(auto-fit, var(--cardsizew));
+    width:100%;
 }
 /* COMPONENTS */
 .logo__logo{
     display: flex;
     align-items: center;
-}
-.logo__title{
-    font-size: calc( var(--lg) * 3);
-    line-height: 0.9;
 }
 .logo__image{
     width: 90rem;
@@ -95,14 +110,162 @@ body{
     cursor: pointer;
 }
 .btn{
-    background-color: var(--primary);
+    width: 20%;
+
+    letter-spacing: 0.5rem;
+    color: var(--onPrimary);
+    
     border: none;
+    border-radius: 0rem 8rem 8rem 0rem;
+    background-color: var(--primary);
+}
+.btn:hover{
+    cursor: pointer;
+    filter: contrast(80%);
+}
+.search{
+    width: 80%;
+    padding-left: 12rem;
+
+    font-family: 'Share Tech Mono', monospace;
+    font-size: var(--sm);
+
+    border: none;
+    border-radius: 8rem 0 0 8rem;
+}
+input:focus{
+    outline: none;
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20rem;
+    width: 85%;
+    max-width: 500rem;
+    height: 40rem;
+}
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    width: var(--cardsizew);
+    height: var(--cardsizeh);
+    padding: 16rem 12rem 12rem;
+
+    color: var(--onPrimary);
+
+    background-color: var(--surface5);
+    border-radius: 8rem;
+}
+.card__stateImg{
+    width: 100rem;
+    height: 100rem;
+    object-fit: cover;
+}
+.imageBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70rem;
+    height: 70rem;
+    
+}
+.country{
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+
+    width: 30rem;
+    height: 23rem;
+    
+    text-align: center;
+    line-height: 23rem;
+
+    background-color: var(--secondary);
+    border-radius: 4rem 0 0 4rem;
+}
+.temp{
+    font-size: calc(var(--lg) * 2);
+}
+.card__description{
+    margin-top: 4rem;
+    text-align: center;
+}
+.card__close{
+    width: 8rem;
+    filter:contrast(10%);
+}
+.closeBox{
+    position: absolute;
+    display: grid;
+    place-items:center;
+    top: 8rem;
+    left: 8rem;
+
+    width: 16rem;
+    height: 16rem;
+}
+.closeBox:hover{
+    cursor: pointer;
+    background-color: var(--surface8);
+    border-radius: 4rem;
 }
 /* TYPOGRAPHY */
+a{
+    text-decoration: none;
+    color: var(--onPrimary);
+}
 h1{
     font-family: 'Share Tech Mono', monospace;
+    font-size: calc( var(--lg) * 3);
+    line-height: 0.9;
 }
 input::placeholder, .btn{
     font-family: 'VT323', monospace;
     font-size: var(--md);
+}
+/* MEDIA QUERIES */
+@media (min-width:1060px) {
+    .up{
+        align-items: start;
+
+        padding-left: 40rem;
+        height: 300rem;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+    h1{
+        font-size: calc( var(--lg) * 5);
+    }
+    .logo__description{
+        margin: 0;
+    }
+    .logo__image{
+        width: 150rem;
+    }
+    .info{
+        align-items: start;
+        
+        margin-right: 40rem;
+        
+    }
+    .info__box{
+        width: 60rem;
+        height: 55rem;
+
+        font-size: var(--sm);
+    }
+    .info__image{
+        width: 32rem;
+    }
+    .info__description{
+        display: inline;
+    }
 }
