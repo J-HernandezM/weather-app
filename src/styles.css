@@ -227,6 +227,9 @@ input::placeholder, .btn{
     font-family: 'VT323', monospace;
     font-size: var(--md);
 }
+.card__description::first-letter{
+    text-transform: capitalize;
+}
 /* MEDIA QUERIES */
 @media (min-width:1060px) {
     .up{
@@ -257,6 +260,8 @@ input::placeholder, .btn{
         
     }
     .info__box{
+        justify-content: center;
+
         width: 60rem;
         height: 55rem;
 
