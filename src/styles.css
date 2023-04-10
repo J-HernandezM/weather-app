@@ -110,7 +110,7 @@ main{
     cursor: pointer;
 }
 .btn{
-    width: 20%;
+    width: 100%;
 
     letter-spacing: 0.5rem;
     color: var(--onPrimary);
@@ -124,7 +124,7 @@ main{
     filter: contrast(80%);
 }
 .search{
-    width: 80%;
+    width: 100%;
     padding-left: 12rem;
 
     font-family: 'Share Tech Mono', monospace;
@@ -137,8 +137,9 @@ input:focus{
     outline: none;
 }
 .searchBox{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 40rem 15rem;
 
     margin-top: 20rem;
     width: 85%;
@@ -214,6 +215,16 @@ input:focus{
     border-radius: 4rem;
 }
 /* TYPOGRAPHY */
+.search__error{
+    margin: 4rem 0 0 8rem;
+    align-self: flex-start;
+
+    color: #d01137;
+    font-size: calc( var(--sm) * 0.9);
+}
+.city{
+    text-align: center;
+}
 a{
     text-decoration: none;
     color: var(--onPrimary);
@@ -229,6 +240,10 @@ input::placeholder, .btn{
 }
 .card__description::first-letter{
     text-transform: capitalize;
+}
+/* STATES */
+.inactive{
+    display: none;
 }
 /* MEDIA QUERIES */
 @media (min-width:1060px) {
