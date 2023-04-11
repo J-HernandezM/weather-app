@@ -86,7 +86,7 @@ async function call(allAPIS, userInput){
         let structure = `<figure class="closeBox closeAction"><img class="card__close closeAction" src="./assets/cerrar.png" alt="close"></figure>
         <h2 class="city">${geoData.name}</h2>
         <h3 class="country">${geoData.country}</h3>
-        <p class="temp">${cardTemp}</p>
+        <p class="temp">${cardTemp}°C</p>
         <div class="imageBox">
             <img src="${cardImageLink}" alt="weather state image" class="card__stateImg">
         </div>
