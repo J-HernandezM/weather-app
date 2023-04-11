@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Weather Wizard</title>
+</head>
+<body>
+    <div class="up">
+        <header>
+            <div class="logo">
+                <div class="logo__logo">
+                    <h1 class="logo__title">
+                        <p class="title1 row">Weather</p>
+                        <p class="title2 row">Wizard</p>
+                    </h1>
+                    <a><img src="./assets/logo.png" alt="company logo" class="logo__image"></a>
+                </div>
+                <p class="logo__description">Look up for the weather anywhere!</p>
+            </div>
+            <div class="info">
+                <a href="https://github.com/J-HernandezM" target="_blank" class="info__box">
+                    <img src="./assets/hacker.png" alt="contact me" class="info__image">
+                    <nobr class="info__description">Code</nobr>
+                </a>
+                <a href="https://github.com/J-HernandezM/weather-app" target="_blank" class="info__box">
+                    <img src="./assets/github.png" alt="github repository" class="info__image">
+                    <nobr class="info__description">J-HernandezM</nobr>
+                </a>
+            </div>
+        </header>
+        <div class="searchBox">
+            <input type="text" class="search" placeholder="Type 'city' or 'city, country'">
+            <button class="btn searchbtn">Search</button>
+            <p class="search__error inactive">Please verify the location and type "city" or "city, country"</p>
+        </div>
+    </div>
+    <div class="down">
+        <main class="target">
+            <!-- <div class="card">
+                <figure class="closeBox"><img class="card__close" src="./assets/cerrar.png" alt="close"></figure>
+                <h2 class="city">Envigado</h2>
+                <h3 class="country">CO</h3>
+                <p class="temp">26</p>
+                <div class="imageBox">
+                    <img src="./assets/sample.png" alt="weather state image" class="card__stateImg">
+                </div>
+                <p class="card__main">Clouds</p>
+                <p class="card__description">thunderstorm with heavy drizzle</p>
+            </div> -->
+        </main>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>

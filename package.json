@@ -1,14 +1,15 @@
 {
-  "name": "clima",
+  "name": "weather-app",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "description": "Pagina web para consultar el clima en determinada o determinadas ubicaciones",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["weather", "clima", "wind", "rain"],
+  "author": "J-HernandezM",
+  "license": "MIT",
   "dependencies": {
     "node-fetch": "^3.3.1"
   }
