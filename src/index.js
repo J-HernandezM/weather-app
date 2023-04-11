@@ -1,6 +1,6 @@
 //SAVE API LINK
 const APIweather = 'https://api.openweathermap.org/data/2.5/weather?'
-const APIgeo = 'http://api.openweathermap.org/geo/1.0/direct?'
+const APIgeo = 'https://api.openweathermap.org/geo/1.0/direct?'
 const APIalpha = 'https://world-countries.p.rapidapi.com/all'
 const APIS = {APIalpha, APIgeo, APIweather}
 const options = {
