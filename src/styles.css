@@ -16,14 +16,14 @@
     --onBg:#FFFFFF;
     --onSfc:#FFFFFF;
     
-    --cardsizew:170rem;
-    --cardsizeh:220rem;
+    --cardsizew:17.0rem;
+    --cardsizeh:22.0rem;
 
-    --sm:16rem;
-    --xs:14rem;
-    --md:18rem;
-    --lg:20rem;
-    font-size: 6.25%;
+    --sm:1.6rem;
+    --xs:1.4rem;
+    --md:1.8rem;
+    --lg:2.0rem;
+    font-size: 62.5%;
 }
 body{
     height: 100vh;
@@ -47,8 +47,8 @@ body{
     justify-content: center;
     align-items: center;
     
-    min-width: 390rem;
-    padding: 24rem 15rem;
+    min-width: 39.0rem;
+    padding: 2.4rem 1.5rem;
     height: fit-content;
     
 }
@@ -57,16 +57,16 @@ body{
     flex-direction: column;
     align-items: center;
     
-    min-width: 390rem;
-    height: 370rem;
-    padding: 20rem 20rem 0 20rem;
+    min-width: 39.0rem;
+    height: 37.0rem;
+    padding: 2.0rem 2.0rem 0 2.0rem;
     
     background-color: var(--background);
 }
 main{
     display: grid;
     justify-content: center;
-    gap: 15rem;
+    gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, var(--cardsizew));
     width:100%;
 }
@@ -76,16 +76,16 @@ main{
     align-items: center;
 }
 .logo__image{
-    width: 90rem;
+    width: 9.0rem;
 }
 .logo__description{
-    margin: 20rem  0 ;    
+    margin: 2.0rem  0 ;    
     
     text-align: center;
     font-size: var(--lg);
 }
 .title2{
-    margin-left: 70rem;
+    margin-left: 7.0rem;
 }
 .info{
     display: flex;
@@ -93,17 +93,17 @@ main{
     align-items: center;
 }
 .info__box:first-child{
-    margin-right: 24rem;
+    margin-right: 2.4rem;
 }
 .info__box{
     display: grid;
     place-items: center;
     grid-template-rows: 80% 20%;
     
-    width: 100rem;
-    height: 100rem;
+    width: 10.0rem;
+    height: 10.0rem;
 
-    border-radius: 8rem;
+    border-radius: .8rem;
 }
 .info__box:hover{
     background-color: var(--surface3);
@@ -112,11 +112,11 @@ main{
 .btn{
     width: 100%;
 
-    letter-spacing: 0.5rem;
+    letter-spacing: .05rem;
     color: var(--onPrimary);
     
     border: none;
-    border-radius: 0rem 8rem 8rem 0rem;
+    border-radius: 0rem .8rem .8rem 0rem;
     background-color: var(--primary);
 }
 .btn:hover{
@@ -125,13 +125,13 @@ main{
 }
 .search{
     width: 100%;
-    padding-left: 12rem;
+    padding-left: 1.2rem;
 
     font-family: 'Share Tech Mono', monospace;
     font-size: var(--sm);
 
     border: none;
-    border-radius: 8rem 0 0 8rem;
+    border-radius: .8rem 0 0 .8rem;
 }
 input:focus{
     outline: none;
@@ -139,12 +139,12 @@ input:focus{
 .searchBox{
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 40rem 15rem;
+    grid-template-rows: 4.0rem 1.5rem;
 
-    margin-top: 20rem;
+    margin-top: 2.0rem;
     width: 85%;
-    max-width: 500rem;
-    height: 40rem;
+    max-width: 50.0rem;
+    height: 4.0rem;
 }
 .card{
     display: flex;
@@ -154,69 +154,69 @@ input:focus{
 
     width: var(--cardsizew);
     height: var(--cardsizeh);
-    padding: 16rem 12rem 12rem;
+    padding: 1.6rem 1.2rem 1.2rem;
 
     color: var(--onPrimary);
 
     background-color: var(--surface5);
-    border-radius: 8rem;
+    border-radius: .8rem;
 }
 .card__stateImg{
-    width: 100rem;
-    height: 100rem;
+    width: 10.0rem;
+    height: 10.0rem;
     object-fit: cover;
 }
 .imageBox{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70rem;
-    height: 70rem;
+    width: 7.0rem;
+    height: 7.0rem;
     
 }
 .country{
     position: absolute;
-    top: 10rem;
+    top: 1.0rem;
     right: 0rem;
 
-    width: 30rem;
-    height: 23rem;
+    width: 3.0rem;
+    height: 2.3rem;
     
     text-align: center;
-    line-height: 23rem;
+    line-height: 2.3rem;
 
     background-color: var(--secondary);
-    border-radius: 4rem 0 0 4rem;
+    border-radius: .4rem 0 0 .4rem;
 }
 .temp{
     font-size: calc(var(--lg) * 2);
 }
 .card__description{
-    margin-top: 4rem;
+    margin-top: .4rem;
     text-align: center;
 }
 .card__close{
-    width: 8rem;
+    width: .8rem;
     filter:contrast(10%);
 }
 .closeBox{
     position: absolute;
     display: grid;
     place-items:center;
-    top: 8rem;
-    left: 8rem;
+    top: .8rem;
+    left: .8rem;
 
-    width: 16rem;
-    height: 16rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 .closeBox:hover{
     cursor: pointer;
     background-color: var(--surface8);
-    border-radius: 4rem;
+    border-radius: .4rem;
 }
 /* TYPOGRAPHY */
 .search__error{
-    margin: 4rem 0 0 8rem;
+    margin: .4rem 0 0 .8rem;
     align-self: flex-start;
 
     color: #d01137;
@@ -250,8 +250,8 @@ input::placeholder, .btn{
     .up{
         align-items: start;
 
-        padding-left: 40rem;
-        height: 300rem;
+        padding-left: 4.0rem;
+        height: 30.0rem;
     }
     header{
         display: flex;
@@ -266,24 +266,24 @@ input::placeholder, .btn{
         margin: 0;
     }
     .logo__image{
-        width: 150rem;
+        width: 15.0rem;
     }
     .info{
         align-items: start;
         
-        margin-right: 40rem;
+        margin-right: 4.0rem;
         
     }
     .info__box{
         justify-content: center;
 
-        width: 60rem;
-        height: 55rem;
+        width: 6.0rem;
+        height: 5.5rem;
 
         font-size: var(--sm);
     }
     .info__image{
-        width: 32rem;
+        width: 3.2rem;
     }
     .info__description{
         display: inline;
